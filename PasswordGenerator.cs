@@ -11,7 +11,7 @@ namespace Design_Patterns_Labb1_PasswordGenerator
 	{
 		private static PasswordGenerator _instance; // Single instance
 		private IPasswordStrategy _strategy; // Strategy pattern interface
-		private static readonly object lockObject = new object();
+		private static readonly object _lock = new object();
 
 		private PasswordGenerator() { } // Private constructor
 
@@ -21,7 +21,7 @@ namespace Design_Patterns_Labb1_PasswordGenerator
 			{
 				if (_instance == null)
 				{
-					lock (lockObject)
+					lock (_lock)
 					{
 						if (_instance == null)
 						{
