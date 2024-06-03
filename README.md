@@ -1,5 +1,6 @@
 # Explanation
 I have Used Factory Method Pattern, Singelton Pattern and Strategy Pattern in this labb
+Also Made a Simple Password Generator for this example to inmplement the Patterns
 
 ## Program.cs
 Contains the entry point (Main method) and calls the Run method for UserInterface.
